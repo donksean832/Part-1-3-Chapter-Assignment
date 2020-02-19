@@ -21,11 +21,14 @@ namespace Part_1_3_Chapter_Assignment
         string Name;
         int age;
 
-        Name = nameInput.Text;
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Greetings.Text = ($"Hello {Name}");
+            Name = nameInput.Text;
+            age = trackInput.Value;
+            Greetings.Text = ($"Hello {Name}, you are {age} years old");
+            
         }
 
     }
