@@ -15,6 +15,18 @@ namespace Part_1_3_Chapter_Assignment
         public Chapter3()
         {
             InitializeComponent();
+            
+
         }
+        string Name;
+        int age;
+
+        Name = nameInput.Text;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Greetings.Text = ($"Hello {Name}");
+        }
+
     }
 }
