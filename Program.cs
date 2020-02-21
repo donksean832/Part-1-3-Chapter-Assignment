@@ -16,7 +16,7 @@ namespace Part_1_3_Chapter_Assignment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Chapter3());
+            Application.Run(new frmChapter3());
         }
     }
 }

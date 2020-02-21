@@ -1,6 +1,6 @@
 ﻿namespace Part_1_3_Chapter_Assignment
 {
-    partial class Chapter3
+    partial class frmChapter3
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,14 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.lblHeight = new System.Windows.Forms.Label();
-            this.nameInput = new System.Windows.Forms.TextBox();
-            this.trackInput = new System.Windows.Forms.TrackBar();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.trkInput = new System.Windows.Forms.TrackBar();
             this.IblUpDown = new System.Windows.Forms.NumericUpDown();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.lblGreetings = new System.Windows.Forms.Label();
             this.lblAgeGuide = new System.Windows.Forms.Label();
             this.IblGreetings2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.trackInput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IblUpDown)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,24 +72,24 @@
             this.lblHeight.TabIndex = 2;
             this.lblHeight.Text = "Please Enter Your Height in Meters \r\nWith Two Deciaml Places.";
             // 
-            // nameInput
+            // txtName
             // 
-            this.nameInput.Location = new System.Drawing.Point(303, 36);
-            this.nameInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nameInput.Name = "nameInput";
-            this.nameInput.Size = new System.Drawing.Size(230, 22);
-            this.nameInput.TabIndex = 3;
+            this.txtName.Location = new System.Drawing.Point(303, 36);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(230, 22);
+            this.txtName.TabIndex = 3;
             // 
-            // trackInput
+            // trkInput
             // 
-            this.trackInput.Location = new System.Drawing.Point(273, 101);
-            this.trackInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.trackInput.Maximum = 60;
-            this.trackInput.Name = "trackInput";
-            this.trackInput.Size = new System.Drawing.Size(260, 56);
-            this.trackInput.TabIndex = 4;
-            this.trackInput.Value = 10;
-            this.trackInput.Scroll += new System.EventHandler(this.trackInput_Scroll);
+            this.trkInput.Location = new System.Drawing.Point(273, 101);
+            this.trkInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.trkInput.Maximum = 60;
+            this.trkInput.Name = "trkInput";
+            this.trkInput.Size = new System.Drawing.Size(260, 56);
+            this.trkInput.TabIndex = 4;
+            this.trkInput.Value = 10;
+            this.trkInput.Scroll += new System.EventHandler(this.trackInput_Scroll);
             // 
             // IblUpDown
             // 
@@ -101,6 +101,11 @@
             131072});
             this.IblUpDown.Location = new System.Drawing.Point(373, 186);
             this.IblUpDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.IblUpDown.Maximum = new decimal(new int[] {
+            272,
+            0,
+            0,
+            131072});
             this.IblUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -153,7 +158,7 @@
             this.IblGreetings2.Size = new System.Drawing.Size(0, 17);
             this.IblGreetings2.TabIndex = 9;
             // 
-            // Chapter3
+            // frmChapter3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -163,16 +168,16 @@
             this.Controls.Add(this.lblGreetings);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.IblUpDown);
-            this.Controls.Add(this.trackInput);
-            this.Controls.Add(this.nameInput);
+            this.Controls.Add(this.trkInput);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblHeight);
             this.Controls.Add(this.lblAge);
             this.Controls.Add(this.lblName);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Chapter3";
-            this.Text = "b n";
+            this.Name = "frmChapter3";
+            this.Text = "Age and Height Forum";
             this.Load += new System.EventHandler(this.Chapter3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.trackInput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkInput)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IblUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -184,8 +189,8 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label lblHeight;
-        private System.Windows.Forms.TextBox nameInput;
-        private System.Windows.Forms.TrackBar trackInput;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TrackBar trkInput;
         private System.Windows.Forms.NumericUpDown IblUpDown;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label lblGreetings;

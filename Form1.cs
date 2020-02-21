@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Part_1_3_Chapter_Assignment
 {
-    public partial class Chapter3 : Form
+    public partial class frmChapter3 : Form
     {
-        public Chapter3()
+        public frmChapter3()
         {
             InitializeComponent();
 
@@ -33,18 +33,18 @@ namespace Part_1_3_Chapter_Assignment
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Name = nameInput.Text;
+            Name = txtName.Text;
             
             height = Convert.ToDouble(IblUpDown.Value);
 
-            lblGreetings.Text = ($"Hello {Name}, you have {82 - age} years left until you eat shit.");
+            lblGreetings.Text = ($"Hello {Name}, you have {82 - age} years left until you probably eat shit.");
             IblGreetings2.Text = ($"You are {2.72 - height}m shorter than the tallest person ever.");
 
         }
 
         private void trackInput_Scroll(object sender, EventArgs e)
         {
-            age = trackInput.Value;
+            age = trkInput.Value;
             lblAgeGuide.Text = ($"{age}");
 
 
