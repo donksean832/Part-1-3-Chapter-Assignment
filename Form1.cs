@@ -37,7 +37,7 @@ namespace Part_1_3_Chapter_Assignment
             
             height = Convert.ToDouble(IblUpDown.Value);
 
-            lblGreetings.Text = ($"Hello {Name}, you have {82 - age} years left until you probably eat shit.");
+            lblGreetings.Text = ($"Hello {Name}, you have {82 - age} years left until the average person dies.");
             IblGreetings2.Text = ($"You are {2.72 - height}m shorter than the tallest person ever.");
 
         }
